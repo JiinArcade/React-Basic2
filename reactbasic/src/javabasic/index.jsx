@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "./style.css";
+import "./style.css";
+import back from "../back.jpeg";
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
       <nav>
         <h1 className="logo">
           <a href="./">
-            <img className="logo" src={logo} alt="logo" />
+            <img className="logo" src="applelogo.png" alt="logo" />
           </a>
         </h1>
         <ul className="gnbList">
@@ -29,19 +30,24 @@ function Header() {
 function Body() {
   return (
     <div className="bodyWrapper">
-      <section className="backgroundImge"></section>
-      <h1>Lorem ipsum dolor sit.</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem in id
-        nemo eum, iure illum!
-      </p>
-      <button type="button">버튼</button>
-      {/* onClick={alert("hi")} */}
+      <div style={{ backgroundImage: "url(" + back + ")", height: "500px" }}>
+        <div className="frontBox">
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem in
+            id nemo eum, iure illum!
+          </p>
+          <button className="frontBtn" type="button">
+            버튼
+          </button>
+        </div>
+      </div>
 
       <div className="top">
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          <br></br>
           omnis modi? Cupiditate totam sed a atque sint blanditiis minima cum?
         </p>
       </div>
@@ -50,21 +56,21 @@ function Body() {
         <div className="postCard">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p className="postBoxTxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            Lorem ipsum dolor sit amet , consectetur adipisicing elit. Incidunt,
             omnis modi? Cupiditate totam sed a atque sint blanditiis minima cum?
           </p>
         </div>
         <div className="postCard">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p className="postBoxTxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            Lorem ipsum dolor sit amet , consectetur adipisicing elit. Incidunt,
             omnis modi? Cupiditate totam sed a atque sint blanditiis minima cum?
           </p>
         </div>
         <div className="postCard">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p className="postBoxTxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            Lorem ipsum dolor sit amet , consectetur adipisicing elit. Incidunt,
             omnis modi? Cupiditate totam sed a atque sint blanditiis minima cum?
           </p>
         </div>
@@ -75,7 +81,7 @@ function Body() {
 
 function Fotter() {
   return (
-    <div class="global-footer">
+    <div class="footerWrapper">
       <h3>Contact</h3>
       <ul class="footer-list">
         <li class="footer-item">

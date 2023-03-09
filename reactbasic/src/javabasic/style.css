@@ -35,6 +35,12 @@ nav {
 
 .gnbItem a {
   color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.gnbItem a:hover {
+  color: skyblue;
+  text-decoration: underline;
 }
 
 .bodyWrapper img {
@@ -106,7 +112,7 @@ nav {
   height: 300px;
   color: #fff;
   background-color: #000;
-  box-shadow: 5px 5px 5px rgba(148, 148, 148, 0.342);
+  box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.342);
   border-radius: 20px;
   padding: 20px;
   margin-right: 30px;
@@ -152,6 +158,15 @@ a {
 
 .footer-item {
   margin-right: 20px;
+  transition: all 300ms ease-in-out;
+}
+
+.footer-item a {
+  transition: all 300ms ease-in-out;
+}
+
+.footer-item a:hover {
+  color: skyblue;
 }
 
 .footer-item:last-child {

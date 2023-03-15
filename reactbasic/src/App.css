@@ -1,1 +1,18 @@
+/* src. component 공통 css */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}

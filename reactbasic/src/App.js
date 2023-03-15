@@ -1,11 +1,11 @@
 import "./App.css";
-import Index from "./javabasic/Index.jsx";
+// import Index from "./javabasic/Index.jsx";
+import Header from "./component/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      
-      <Index />
+      <Header></Header>
     </div>
   );
 }

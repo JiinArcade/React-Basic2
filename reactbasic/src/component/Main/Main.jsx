@@ -24,7 +24,11 @@ function Ipsum(props) {
           // showBtn이 true 일 때만 button을 렌더링
           // 둘 다 true 일 경우에만 버튼을 렌더링 하고
           // 좌항이 false일 경우 바로 false를 반환한다.
-          showBtn && <button className='front-btn'>버튼</button>
+
+          // 이벤트 핸들러에 함수가 아닌 표현식이나 값을 바로 전달할 경우 
+          // 컴포넌트가 재렌더링 될 때 마다 해당 값이 실행된다.
+          // 온 클릭 했을 때 실행되게 하려면 이벤트 핸들러에 값을 함수로 전달  
+          showBtn && <button className='front-btn' onClick={() => alert('안녕하세여')}>버튼</button>
         }
       </div>
     </section>
